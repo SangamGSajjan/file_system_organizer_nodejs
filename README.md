@@ -11,9 +11,3 @@ File System Organizer is a command-line tool built with Node.js that helps you o
 - Easy-to-use command-line interface.
 - Helps keep your files structured and tidy.
 
-## Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-- Node.js installed on your system.
-- Basic knowledge of the command line.
