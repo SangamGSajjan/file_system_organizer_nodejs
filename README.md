@@ -1,51 +1,65 @@
-# file_system_organizer_nodejs
+File System Organizer (Node.js)
+This is a simple command-line tool for organizing files in a directory based on their file types. It categorizes files into different folders such as media, archives, documents, apps, images, code, and databases. You can use this tool to keep your files organized and easily locate specific types of files.
 
-# File System Organizer (Node.js)
+Prerequisites
+Before using this tool, ensure that you have the following software installed on your system:
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/your-username/file_system_organizer_nodejs/blob/main/LICENSE)
-[![Node.js Version](https://img.shields.io/badge/node-%3E%3D%2012.0.0-brightgreen.svg)](https://nodejs.org/)
-[![GitHub Issues](https://img.shields.io/github/issues/your-username/file_system_organizer_nodejs.svg)](https://github.com/your-username/file_system_organizer_nodejs/issues)
+Node.js: You can download and install Node.js from https://nodejs.org/
+Installation
+Clone this GitHub repository to your local machine or download the code as a ZIP file and extract it.
 
-A Node.js project that organizes your messy file system by moving files into designated folders based on their file types.
+Open your terminal or command prompt and navigate to the project directory.
 
-## Table of Contents
+Install the required dependencies by running the following command:
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+Copy code
+npm install
+Usage
+Organize Files
+To organize files in a directory, use the organize command followed by the path to the directory you want to organize. If you don't specify a directory path, it will organize the files in the current working directory.
 
-## Introduction
+shell
+Copy code
+node main.js organize "directoryPath"
+Example:
 
-File System Organizer is a Node.js application designed to help you keep your file system tidy. It automatically identifies files by their types (e.g., images, documents, music) and organizes them into specific folders.
+shell
+Copy code
+node main.js organize "/path/to/directory"
+Help
+To view a list of available commands, use the help command:
 
-Say goodbye to the clutter in your downloads folder and hello to a well-organized file system!
+shell
+Copy code
+node main.js help
+Supported File Types
+This tool can categorize files into the following types:
 
-## Features
+Media (e.g., mp4, mkv)
+Archives (e.g., zip, 7z, rar, tar)
+Documents (e.g., docx, pdf, xlsx)
+Apps (e.g., exe, dmg, pkg)
+Images (e.g., png, jpg)
+Code (e.g., js, html, css, java)
+Database (e.g., sql, json, csv)
+Others (files with unsupported extensions)
+How It Works
+The tool identifies the file type based on its extension.
 
-- Automatically sorts files into folders based on file types.
-- Customizable folder structure and file type associations.
-- Easy-to-use command-line interface.
-- Cross-platform compatibility (Windows, macOS, Linux).
+It creates a folder for each file type (e.g., media, archives) in the specified directory or the current working directory.
 
-## Getting Started
+Files are moved to their respective folders based on their types.
 
-Follow these steps to get the File System Organizer up and running on your system.
+Examples
+shell
+Copy code
+# Organize files in the current working directory
+node main.js organize
 
-### Prerequisites
+# Organize files in a specific directory
+node main.js organize "/path/to/directory"
 
-Make sure you have the following installed on your machine:
-
-- Node.js (v12.0.0 or higher)
-- npm (Node Package Manager)
-
-### Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/file_system_organizer_nodejs.git
+# View a list of available commands
+node main.js help
+Contributing
+If you would like to contribute to this project, please open an issue or create a pull request on the GitHub repository.
